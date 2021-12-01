@@ -1,0 +1,22 @@
+.employee-list-item {
+  cursor: pointer;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  transition: all 0.2s linear;
+  position: relative;
+  border-bottom: 1px solid gray;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.employee-list-item:hover {
+  background-color: rgba(182, 223, 253, 0.3);
+}
+
+.employee-list-item:last-child {
+  border: none;
+}

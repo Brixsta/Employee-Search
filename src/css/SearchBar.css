@@ -1,0 +1,10 @@
+.search-bar-input {
+  padding: 1rem;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  margin: 1rem;
+  border-radius: 30px;
+  border: solid 1px gray;
+  box-sizing: border-box;
+}
