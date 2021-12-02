@@ -5,11 +5,13 @@ import ProfileContent from "./ProfileContent";
 import ProfileFooter from "./ProfileFooter";
 
 const Profile = (props) => {
+  const { targetEmployee } = props;
   const { backToEmployeeSearch } = props;
+
   return (
     <div className="profile-container">
       <ProfileHeader backToEmployeeSearch={backToEmployeeSearch} />
-      <ProfileContent />
+      <ProfileContent targetEmployee={targetEmployee} />
       <ProfileFooter />
     </div>
   );

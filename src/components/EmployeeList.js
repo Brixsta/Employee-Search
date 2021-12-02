@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 import Employee from "./Employee";
 import "../css/EmployeeList.css";
 import React from "react";
@@ -7,6 +6,7 @@ const EmployeeList = (props) => {
   const { employees } = props;
   const { filtered } = props;
   const { displayEmployeesProfile } = props;
+  const { grabEmployeeData } = props;
 
   employees.sort((a, b) => {
     if (a.name > b.name) {
@@ -24,9 +24,10 @@ const EmployeeList = (props) => {
               <Employee
                 name={person.name}
                 title={person.title}
-                avatar={person.avatar}
                 displayEmployeesProfile={displayEmployeesProfile}
-                key={uuidv4()}
+                grabEmployeeData={grabEmployeeData}
+                id={person.id}
+                key={person.id}
               />
             );
           })
@@ -35,9 +36,10 @@ const EmployeeList = (props) => {
               <Employee
                 name={person.name}
                 title={person.title}
-                avatar={person.avatar}
                 displayEmployeesProfile={displayEmployeesProfile}
-                key={uuidv4()}
+                grabEmployeeData={grabEmployeeData}
+                id={person.id}
+                key={person.id}
               />
             );
           })}

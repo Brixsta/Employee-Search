@@ -11,12 +11,25 @@ const Employee = (props) => {
 
   const { title } = props;
   const { displayEmployeesProfile } = props;
+  const { grabEmployeeData } = props;
+  const { id } = props;
 
   return (
-    <li onClick={displayEmployeesProfile} className="employee-list-item">
-      <Avatar name={props.name} />
-      <span className={"employee-name"}>{name}</span>
-      <span className={"employee-title"}>{title}</span>
+    <li
+      onClick={(evt) => {
+        displayEmployeesProfile();
+        grabEmployeeData(evt);
+      }}
+      className="employee-list-item"
+      id={id}
+    >
+      <Avatar id={id} name={props.name} />
+      <span id={id} className={"employee-name"}>
+        {name}
+      </span>
+      <span id={id} className={"employee-title"}>
+        {title}
+      </span>
     </li>
   );
 };

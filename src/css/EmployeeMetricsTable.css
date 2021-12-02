@@ -6,10 +6,10 @@
 table {
   border: solid 1px gray;
   border-collapse: collapse;
-  user-select: none;
 }
 
 th {
+  font-size: 0.9rem;
   margin-top: 5rem;
   padding: 0.5rem;
   border: solid 1px gray;
@@ -48,5 +48,5 @@ td {
   margin: 0;
   padding: 0.5rem;
   background-color: whitesmoke;
-  user-select: none;
+  font-size: 0.8rem;
 }
