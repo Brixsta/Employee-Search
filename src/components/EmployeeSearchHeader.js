@@ -4,10 +4,17 @@ import SearchBar from "./SearchBar";
 import React from "react";
 
 const Header = (props) => {
+  const { updateSearchBarText } = props;
+  const { searchBarText } = props;
+
   return (
     <header className="employee-search-header">
       <EmployeeSearchTitle />
-      <SearchBar updateFiltered={props.updateFiltered} />
+      <SearchBar
+        updateSearchBarText={updateSearchBarText}
+        updateFiltered={props.updateFiltered}
+        searchBarText={searchBarText}
+      />
     </header>
   );
 };

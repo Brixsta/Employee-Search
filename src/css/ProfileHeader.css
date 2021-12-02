@@ -32,3 +32,22 @@
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f3fa', endColorstr='#b6dffd',GradientType=0 ); /* IE6-9 */
 }
+
+.back-to-employee-search-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  margin: 0.5rem 2rem;
+  border-radius: 30px;
+  border: solid 1px gray;
+  box-sizing: border-box;
+  margin-right: 3rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.back-to-employee-search-button:hover {
+  text-decoration: underline;
+}

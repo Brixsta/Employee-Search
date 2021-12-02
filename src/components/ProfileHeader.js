@@ -11,7 +11,7 @@ const ProfileHeader = (props) => {
         }}
         className="back-to-employee-search-button"
       >
-        GO BACK{" "}
+        Back to Employee Search{" "}
       </button>
     </header>
   );

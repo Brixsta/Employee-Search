@@ -16,7 +16,7 @@ const ProfileContent = (props) => {
         style={{ backgroundImage: `url("/images/${photoName}_profile.jpg")` }}
         className="profile-picture"
       ></div>
-      <h1>{name}</h1>
+      <h1 className="profile-title">{name}</h1>
       <EmployeeMetricsTable name={name} targetEmployee={targetEmployee} />
     </div>
   );

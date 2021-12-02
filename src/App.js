@@ -126,12 +126,14 @@ class App extends React.Component {
       filtered: null,
       displayProfile: false,
       targetEmployee: null,
+      searchBarText: "",
     };
 
     this.updateFiltered = this.updateFiltered.bind(this);
     this.displayEmployeesProfile = this.displayEmployeesProfile.bind(this);
     this.backToEmployeeSearch = this.backToEmployeeSearch.bind(this);
     this.grabEmployeeData = this.grabEmployeeData.bind(this);
+    this.updateSearchBarText = this.updateSearchBarText.bind(this);
   }
 
   updateFiltered(value) {
@@ -142,6 +144,10 @@ class App extends React.Component {
     );
 
     this.setState({ filtered: filtered });
+  }
+
+  updateSearchBarText(value) {
+    this.setState({ searchBarText: value });
   }
 
   componentDidMount() {
@@ -177,7 +183,11 @@ class App extends React.Component {
       <div className="wrapper">
         {this.state.displayProfile === false && (
           <div className="container">
-            <EmployeeSearchHeader updateFiltered={this.updateFiltered} />
+            <EmployeeSearchHeader
+              updateSearchBarText={this.updateSearchBarText}
+              updateFiltered={this.updateFiltered}
+              searchBarText={this.state.searchBarText}
+            />
             <EmployeeList
               grabEmployeeData={this.grabEmployeeData}
               employees={this.state.employees}
