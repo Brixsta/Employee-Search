@@ -1,0 +1,17 @@
+.profile-content {
+  width: 100%;
+  height: 41rem;
+  background-color: white;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 550px;
+  height: 250px;
+  background-color: black;
+}

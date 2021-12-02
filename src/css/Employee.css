@@ -1,10 +1,10 @@
 .employee-list-item {
   cursor: pointer;
-  padding: 1.5rem;
-  font-size: 1.5rem;
+  padding: 1.25rem;
+  font-size: 1.25rem;
+  height: 4.05rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: whitesmoke;
   transition: all 0.2s linear;
   position: relative;
@@ -13,10 +13,25 @@
   user-select: none;
 }
 
-.employee-list-item:hover {
-  background-color: rgba(182, 223, 253, 0.3);
+.employee-list-item:nth-child(even) {
+  background-color: rgb(255, 255, 255);
 }
 
-.employee-list-item:last-child {
-  border: none;
+.employee-list-item:hover {
+  background-color: rgba(182, 223, 253, 0.5);
+}
+
+/* .employee-list-item:last-child {
+  border-bottom: none;
+} */
+
+.employee-name {
+  margin-top: -0.5rem;
+}
+
+.employee-title {
+  position: absolute;
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  color: gray;
 }

@@ -16,15 +16,13 @@
 }
 
 .container {
-  height: 40.7rem;
+  height: 47rem;
   width: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: whitesmoke;
-  border: solid 1px gray;
+  border-bottom: none;
   box-sizing: border-box;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
 }
