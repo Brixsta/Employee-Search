@@ -4,11 +4,12 @@ import "../css/EmployeeMetricsTable.css";
 const EmployeeMetricsTable = (props) => {
   const { targetEmployee } = props;
   const { name } = props;
-  const title = targetEmployee.title;
+  /*const title = targetEmployee.title;
   const department = targetEmployee.department;
   const phoneNumber = targetEmployee.phoneNumber;
   const email = targetEmployee.email;
-  const hireDate = targetEmployee.hireDate;
+  const hireDate = targetEmployee.hireDate;*/
+  const { title, department, phoneNumber, email, hireDate } = targetEmployee;
   return (
     <table className={"employee-metrics-table"}>
       <thead>
