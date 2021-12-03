@@ -9,6 +9,7 @@
     "browser": true,
     "node": true
   },
+  "parser": "@babel/eslint-parser",
   "rules": {
     "no-console": "error"
   }
